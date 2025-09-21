@@ -7,7 +7,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y git
 
 # Clone your backend repo
-RUN git clone https://github.com/2300031777/voting-backend.git .
+RUN git clone https://github.com/2300031777/grocery-backend.git .
 
 # Build the project (skip tests for faster builds)
 RUN mvn clean package -DskipTests
